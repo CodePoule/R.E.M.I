@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>R.É.M.I</title>
+    <!--Feuille de Style-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+    <!--<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">-->
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <!--Scripts js ou jQuery en ligne-->
+    <!--<script  type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>-->
+    <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+    <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+</head>
+<body>
+    <div id="entete">
+        <img src="img/sprites/down.png" id="logo"/>
+        <h1 id="titre-projet">Run and Explore our Marvelous Island</h1>
+    </div>
+    <div id="flex-container">
+
+        <div id = "regles">
+            <h2>Règles du jeu</h2>
+            <p id="rules">Accablé par ta dure journée de labeur dûe au changement de planning, tu finis par t’endormir et rêver d’une île déserte que tes étudiants préférés ont envahie.
+
+                Ta quête, si tu l’acceptes est de les aider à résoudre leurs problèmes afin de pouvoir adoucir ta réalité.
+
+                Mais gare à toi! Quelque part dans ce monde une demande reviendra te hanter !
+            </p>
+        </div>
+
+
+        <div class="nouveauJeu">
+            <button type="button" class="newGame"> Nouveau Jeu</button>
+        </div>
+
+
+        <div id="back-real">
+            <p id="retour">Retour au monde réel : </p>
+            <div id = "progressBarRemy"></div>
+        </div>
+        <canvas id="canvas" width="800" height="460">
+            <div id="chatiment-impromptu">
+                <p>châtiment impromptu :<br>Rémiiii on peut refaire du SQL ? </p>
+            </div>
+            <div id="msg-eleve">
+                <div id="msg"></div>
+                <div id="back-msg"></div>
+            </div>
+            <div id="photoPop">
+                <p id="pPhotoPop">Bravo Rémi tu as résolu tous nos problèmes ! Merci !</p>
+                <img src="img/photoPop.png">
+            </div>
+        </canvas>
+        <div id="pad">
+            <button id="up"><i class="fas fa-arrow-alt-circle-up"></i></button>
+            <br>
+            <button id="left"><i class="fas fa-arrow-circle-left"></i></button>
+            <button id="right"><i class="fas fa-arrow-circle-right"></i></button>
+            <br>
+            <button id="down"><i class="fas fa-arrow-circle-down"></i></button>
+        </div>
+    </div>
+
+<!--Scripts JS et jQuery-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
